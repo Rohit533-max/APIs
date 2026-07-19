@@ -11,7 +11,6 @@ def get_github_user(username):
         if r.status_code == 200:
             user = r.json()
             return {
-            "\n===== GitHub User Profile ====="
             "Name"           : user.get('name'),
             "Username"      : user.get('login'),
             "Bio"            : user.get('bio'),
